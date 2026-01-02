@@ -90,4 +90,10 @@ function clearMessage() {
 document.getElementById("btnShow").addEventListener("click", showMessage);
 document.getElementById("btnClear").addEventListener("click", clearMessage);
 
+// input
+document.getElementById("submitbtn").addEventListener("click", showName);
 
+function showName() {
+    let name = document.getElementById("nameInput").value;
+    document.getElementById("output").textContent = "Hello " + name;
+} 
