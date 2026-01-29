@@ -97,3 +97,14 @@ function showName() {
     let name = document.getElementById("nameInput").value;
     document.getElementById("output").textContent = "Hello " + name;
 } 
+
+
+// inputs and user data
+
+function greetUser() {
+    let name = document.getElementById("username").value;
+    document.getElementById("output").innerText = "Hello " + name;
+  }
+  
+
+  
