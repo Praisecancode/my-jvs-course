@@ -118,7 +118,7 @@
   //hello//
 
 
- // GLOBAL SCOPE //
+ // DAY 1 : GLOBAL SCOPE //
   let name = "praise";
 
   function greet() {
@@ -176,3 +176,89 @@ function introduce() {
     favoritelanguage = "javascript"
 }
 console.log(`my favourite language is ${favoritelanguage} `)
+
+console.log(100);
+
+
+// DAY 2 : BASIC FUNCTION //
+function greet() {
+  console.log("Hello world")
+}
+greet()
+
+// FUNCTION WITH PARAMETERS //
+function greet(name) {
+  console.log(`Hello  ${name} `)
+}
+greet("praise")
+greet("peace")
+
+// FUNCTION WITH RETURN VALUES //
+function add(a , b) {
+  return a + b;
+}
+let result = add(5, 3);
+console.log(result)
+
+// PRACTICE EXERCISE //
+function greet() {
+  console.log("welcome to javascript")
+}
+greet()
+
+function multiply(a, b) {
+  return a * b;
+}
+let output = multiply(4, 5);
+console.log(result);
+
+// PRACTICE EXERCISE //
+let name2 = "praise"
+let age2 = 18
+function introduce() {
+  return age2;
+}
+console.log(`my name is ${name2} and i am ${18} years old`)
+introduce()
+
+// CORRECTED //
+let name3 = "praise"
+let age3 = 18
+function introduce() {
+  return `my name is ${name3} and i am ${age3} years old`
+}
+console.log(introduce())
+
+
+// MINI PROJECT JAVASCRIPT CALCULATOR //
+function add(a, b) {
+  return a + b;
+}
+let result1 = add(5, 3);
+console.log(result1)
+
+function subtract(a, b) {
+  return a - b;
+}
+let result2 = subtract(10, 4);
+console.log(result2)
+
+function multiply(a, b) {
+  return a * b;
+}
+let result3 =multiply(2, 5);
+console.log(result3)
+
+function divide(a, b) {
+  return a / b;
+}
+let result4 =divide(20, 4);
+console.log(result4)
+
+// WRITE THE ADD FUNCTION USING ARROW SYNTAX //
+const add = (a, b) => {
+  return a + b;
+}
+
+// CORRECTED //
+const addArrow = (a, b) => a + b;
