@@ -246,13 +246,13 @@ console.log(result2)
 function multiply(a, b) {
   return a * b;
 }
-let result3 =multiply(2, 5);
+let result3 = multiply(2, 5);
 console.log(result3)
 
 function divide(a, b) {
   return a / b;
 }
-let result4 =divide(20, 4);
+let result4 = divide(20, 4);
 console.log(result4)
 
 // WRITE THE ADD FUNCTION USING ARROW SYNTAX //
@@ -262,3 +262,109 @@ const add = (a, b) => {
 
 // CORRECTED //
 const addArrow = (a, b) => a + b;
+console.log(addArrow(10, 5))
+
+
+// FUNCTION DEFAULT PARAMETER //
+function registerUser(user = "bot") {
+  return user + "is registered";
+}
+
+console.log(registerUser())
+
+// FUNCTION OBJECTS AS PARAMETERS //
+function loginUser(user) {
+  return `The ${user.name} with the id of ${user.id} is logged in`
+}
+
+const user = {
+  id: 1,
+  name: "john",
+};
+
+console.log(loginUser(user))
+
+// DAY 3 MAP() METHOD //
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled);
+
+const numbers2 = [1, 2, 3, 4,5];
+const halfed = numbers2.map(num => num / 2);
+console.log(halfed);
+
+const numbers3 = [1, 2, 3, 4, 5];
+const result6 = numbers3.map(num => num + 1);
+console.log(result6);
+
+// FILTER METHOD // 
+const numbers4 = [5, 10, 15, 20];
+const result5 = numbers4.filter(num => num > 10);
+console.log(result5)
+
+const numbers5 = [1, 2, 3, 4, 5];
+const result7 = numbers5.filter(num => num % 2 != 0);
+console.log(result7);
+
+const numbers6 = [1, 2, 3 , 4, 5];
+const result8 = numbers6.reduce((sum, num) => sum + num, 0);
+console.log(result8);
+
+const prices = [10, 20, 30 , 40];
+const add2 = prices.map(num => num + 5);
+const keep = prices.filter(num => num > 25);
+const sum = prices.reduce((sum, num) => sum + num, 0);
+console.log(add2);
+console.log(keep);
+
+const user2 = [
+  {name: "John", age: 12},
+  {name: "Praise", age: 18},
+  {name: "zoe", age: 25}
+];
+const adults = user2.filter(user2 => user2.age >= 18);
+console.log(adults);
+
+// DAY 4 //
+const car = {
+  brand: "Toyota",
+  year: 2020
+};
+console.log(car.brand)
+
+const user3 = {
+  name4: "John",
+  age: 30
+};
+const  { name4 } = user3;
+console.log(name4)
+
+// MINI CODING PRACTICE //
+const book = {
+  title: "established",
+  author: "grace linkdiln",
+  year: 2008,
+};
+console.log(book.title);
+book.publisher = "lad";
+console.log(book);
+
+// DAY 5 DOM-DOCUMENT OBJECT MODEL //
+const button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+document.getElementById("title").textcontent = "helllo praise!";
+});
+
+const div = document.createeElement("div");
+div.textcontent = "hello world";
+document.body.appendChild(div);
+
+
+// MINI TASK //
+const button1 = document.getElementById("btn1");
+
+button1.addEventListener("click", function(){
+  document.getElementById("btn1").textContent = "welcome to javascript"
+  
+})
